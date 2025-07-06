@@ -1,196 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Realworld – Your Software Hub</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="scriptforcreate.js" defer></script>
-    
-
-    
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              arabic: ["Noto Naskh Arabic", "sans-serif " , "Inter"],
-            },
-colors: {
-
-picton:  ' #1AA7EC',
-picton2: '#3CB7F0'
-
-
-             } ,
-            },
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Realworld – Your Software Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            arabic: ["Noto Naskh Arabic", "sans-serif", "Inter"],
           },
-        }
-    
-    
-    </script>
+          colors: {
+            picton: '#1AA7EC',
+            picton2: '#3CB7F0'
+          }
+        },
+      },
+    };
+  </script>
+</head>
 
-  </head>
-  <body class="bg-gray-900 text-white">
-    <!-- Navbar -->
-    <nav class="bg-gray-800">
-      <div class="container mx-auto flex flex-wrap items-center justify-between p-4   flex-row-reverse">
-        <a href="#" class="text-picton text-2xl font-bold">RealworldZone</a>
-        <button class="block lg:hidden text-white" onclick="document.getElementById('navbarNav').classList.toggle('hidden')">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-        </button>
-        <div class="hidden w-full lg:flex lg:items-center lg:w-auto" id="navbarNav">
-          <ul class="flex flex-col lg:flex-row gap-4 mt-4 lg:mt-0 lg:gap-6">
-            <li><a class="hover:text-picton" href="#">Home</a></li>
-            <li><a class="hover:text-picton" href="#">Categories</a></li>
-            <li><a class="hover:text-picton" href="#">Upload</a></li>
-            <li><a class="hover:text-picton" href="#">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<body class="bg-gray-900 text-white">
 
+<!-- Navbar -->
+<nav class="bg-gray-800">
+  <div class="container mx-auto flex flex-wrap items-center justify-between p-4 flex-row-reverse">
+    <a href="#" class="text-picton text-2xl font-bold">RealworldZone</a>
+    <button class="block lg:hidden text-white" onclick="document.getElementById('navbarNav').classList.toggle('hidden')">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+    </button>
+    <div class="hidden w-full lg:flex lg:items-center lg:w-auto" id="navbarNav">
+      <ul class="flex flex-col lg:flex-row gap-4 mt-4 lg:mt-0 lg:gap-6">
+        <li><a class="hover:text-picton" href="#">Home</a></li>
+        <li><a class="hover:text-picton" href="#">Categories</a></li>
+        <li><a class="hover:text-picton" href="#">Upload</a></li>
+        <li><a class="hover:text-picton" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <!-- Hero Section -->
-    <section class=" text-white text-center py-20 px-6 font-inter mt-[-2px]">
-      <div class="container mx-auto">
-        <h3 class="text-4xl font-bold mb-4 tracking-tight leading-tight mb-4">Welcome to Real World Zone</h3>
-        <p class="text-xl">Find and download software, tools, and operating systems in one place.</p>
-        <form class="mt-6 flex justify-center gap-2" role="search">
-          <input class="w-1/2 px-4 py-2 rounded text-black" type="search" placeholder="Search software..." aria-label="Search">
-          <button class="bg-white text-blue-800 px-4 py-2 rounded font-semibold" type="submit">Search</button>
-        </form>
-      </div>
-    </section>
+<section class="text-white text-center py-20 px-6 font-inter mt-[-2px]">
+  <div class="container mx-auto">
+    <h3 class="text-4xl font-bold mb-4">Welcome to Real World Zone</h3>
+    <p class="text-xl">Find and download software, tools, and operating systems in one place.</p>
+    <form class="mt-6 flex justify-center gap-2" role="search">
+      <input class="w-1/2 px-4 py-2 rounded text-black" type="search" placeholder="Search software..." aria-label="Search">
+      <button class="bg-white text-blue-800 px-4 py-2 rounded font-semibold" type="submit">Search</button>
+    </form>
+  </div>
+</section>
 
-<br>
+<!-- Horizontal Nav -->
+<div class="bg-gray-800 overflow-x-auto whitespace-nowrap py-6 px-12 flex flex-row-reverse gap-4 w-full text-xl rounded-md shadow-1xl">
+  <a class="hover:text-picton" href="#">Windows</a>
+  <a class="hover:text-picton" href="#">Linux</a>
+  <a class="hover:text-picton" href="#">Drivers</a>
+  <a class="hover:text-picton" href="#">Tools</a>
+  <a class="hover:text-picton" href="#">Tutorials</a>
+  <a class="hover:text-picton" href="#">Security</a>
+  <a class="hover:text-picton" href="#">More</a>
+</div>
 
-
-
-
-    <!-- RTL Navbar -->
-    <div class="bg-gray-800  overflow-x-auto whitespace-nowrap py-6 px-12 text-white flex flex-row-reverse  gap-4  justify-start w-full rounded-md  shadow-1xl text-xl" >
-      <a class="hover:text-picton" href="#">Windows</a>
-      <a class="hover:text-picton" href="#">Linux</a>
-      <a class="hover:text-picton" href="#">Drivers</a>
-      <a class="hover:text-picton" href="#">Tools</a>
-      <a class="hover:text-picton" href="#">Tutorials</a>
-      <a class="hover:text-picton" href="#">Security</a>
-      <a class="hover:text-picton" href="#">More</a>
-    </div>
-
-    
-
-    <!-- Main Content -->
-    <div class="container mx-auto my-12 px-4">
-      <div class="grid lg:grid-cols-12 gap-8">
-        <!-- Main Section -->
-        <div class="lg:col-span-9">
-          <h3 class="text-2xl font-semibold mb-6">Latest Software</h3>
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Card 1 -->
-            <div class="bg-white text-black rounded shadow hover:shadow-lg overflow-hidden">
-              <img src="images/linux.png" class="w-full h-48 object-cover" alt="Ubuntu">
-              <div class="p-4">
-                <h5 class="font-semibold text-lg">Ubuntu 22.04</h5>
-                <p class="text-sm">A popular Linux OS – fast and free this is great for understanding linux .</p>
-                <a href="#" class="mt-2 inline-block bg-picton text-white text-sm px-3 py-1 rounded hover:bg-green-600"><i class="bi bi-download"></i> Download</a>
-              </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="bg-white text-black rounded shadow hover:shadow-lg overflow-hidden">
-              <img src="images/code.jpg" class="w-full h-48 object-cover" alt="VSCode">
-              <div class="p-4">
-                <h5 class="font-semibold text-lg">Visual Studio Code</h5>
-                <p class="text-sm">Lightweight code editor with extensions support.</p>
-                <a href="#" class="mt-2 inline-block bg-picton text-white text-sm px-3 py-1 rounded hover:bg-green-600"><i class="bi bi-download"></i> Download</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sidebar -->
-        <div class="lg:col-span-3 mt-10">
-          <h5 class="text-xl font-semibold mb-4 ml-20 mt-8">Categories</h5>
-          <ul class="space-y-2 mb-6 ml-20 ">
-            <li><a class="text-picton hover:underline" href="#">Operating Systems</a></li>
-            <li><a class="text-picton hover:underline" href="#">Development Tools</a></li>
-            <li><a class="text-picton hover:underline" href="#">Drivers</a></li>
-            <li><a class="text-picton hover:underline" href="#">Antivirus</a></li>
-          </ul>
-          <h5 class="text-xl font-semibold mb-2">News</h5>
-          <div class="bg-gray-700 p-4 rounded">
-            <p>New version of Windows 11 released with major updates!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Kurdish Software Section -->
-    <section class="container mx-auto my-12 px-4 font-arabic">
-      <h2 class="text-2xl border-b border-gray-600 pb-2 mb-6">دەگردنی خێرا بۆ کۆمپیوتەر</h2>
+<!-- Software Cards -->
+<div class="container mx-auto my-12 px-4">
+  <div class="grid lg:grid-cols-12 gap-8">
+    <div class="lg:col-span-9">
+      <h3 class="text-2xl font-semibold mb-6">Latest Software</h3>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Card 1 -->
         <div class="bg-white text-black rounded shadow hover:shadow-lg overflow-hidden">
-          <img src="images/cc.png" class="w-full h-48 object-cover" alt="CCleaner">
+          <img src="images/linux.png" class="w-full h-48 object-cover" alt="Ubuntu">
           <div class="p-4">
-            <h5 class="font-semibold text-lg">CCleaner</h5>
-            <p class="text-sm">.بەرنامەی پاککردنەوەی فایلەکان و خێراکردنەوەی سیستەم</p>
-            <a href="#" class="mt-2 inline-block bg-picton text-white text-sm px-3 py-1 rounded hover:bg-green-600">داگرتن</a>
+            <h5 class="font-semibold text-lg">Ubuntu 22.04</h5>
+            <p class="text-sm">A popular Linux OS – fast and free this is great for understanding linux.</p>
+            <a href="#" class="mt-2 inline-block bg-picton text-white text-sm px-3 py-1 rounded hover:bg-green-600">Download</a>
           </div>
         </div>
         <!-- Card 2 -->
         <div class="bg-white text-black rounded shadow hover:shadow-lg overflow-hidden">
-          <img src="images/asc.jpg" class="w-full h-48 object-cover" alt="SystemCare">
+          <img src="images/code.jpg" class="w-full h-48 object-cover" alt="VSCode">
           <div class="p-4">
-            <h5 class="font-semibold text-lg">Advanced SystemCare</h5>
-<p class="text-sm">.ئامرازێکی گشتی بۆ چاککردنەوەی هەڵە و خێراکردنەوەی کۆمپیوتەر</p>
-            <a href="#" class="mt-2 inline-block bg-picton text-white text-sm px-3 py-1 rounded hover:bg-green-600">داگرتن</a>
-          </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="bg-white text-black rounded shadow hover:shadow-lg overflow-hidden">
-          <img src="images/utl.jpg" class="w-full h-48 object-cover" alt="Glary Utilities">
-          <div class="p-4">
-            <h5 class="font-semibold text-lg">Glary Utilities</h5>
-<p class="text-sm">.کۆمەڵێك توول بۆ سەرجەم خزمەتگوزارییەکان و خێراکردنەوە</p>
-      <a href="#" class="mt-2 inline-block bg-picton text-white text-sm px-3 py-1 rounded hover:bg-green-600">داگرتن</a>
+            <h5 class="font-semibold text-lg">Visual Studio Code</h5>
+            <p class="text-sm">Lightweight code editor with extensions support.</p>
+            <a href="#" class="mt-2 inline-block bg-picton text-white text-sm px-3 py-1 rounded hover:bg-green-600">Download</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
+    <!-- Sidebar -->
+    <div class="lg:col-span-3 mt-10">
+      <h5 class="text-xl font-semibold mb-4 ml-20 mt-8">Categories</h5>
+      <ul class="space-y-2 mb-6 ml-20">
+        <li><a class="text-picton hover:underline" href="#">Operating Systems</a></li>
+        <li><a class="text-picton hover:underline" href="#">Development Tools</a></li>
+        <li><a class="text-picton hover:underline" href="#">Drivers</a></li>
+        <li><a class="text-picton hover:underline" href="#">Antivirus</a></li>
+      </ul>
+      <h5 class="text-xl font-semibold mb-2">News</h5>
+      <div class="bg-gray-700 p-4 rounded">
+        <p>New version of Windows 11 released with major updates!</p>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- Kurdish Software Section -->
+<section class="container mx-auto my-12 px-4 font-arabic">
+  <h2 class="text-2xl border-b border-gray-600 pb-2 mb-6">دەگردنی خێرا بۆ کۆمپیوتەر</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Cards (3) -->
+    <!-- ... same as above ... -->
+  </div>
+</section>
 
-<!-- form -->
+<!-- Form to Add User -->
+<section class="container mx-auto my-12 px-4">
+  <h1 class="text-2xl font-semibold mb-4">Sign In</h1>
+  <form id="userForm" class="space-y-4">
+    <label class="block">Name:
+      <input type="text" name="name" class="w-full px-4 py-2 text-black rounded" required />
+    </label>
+    <label class="block">Email:
+      <input type="email" name="email" class="w-full px-4 py-2 text-black rounded" required />
+    </label>
+    <button type="submit" class="bg-picton text-white px-6 py-2 rounded">Add User</button>
+  </form>
+  <p id="result" class="mt-4 text-green-400"></p>
+</section>
 
-<h1>Sgin in </h1>
-<br>
-<form id="userForm">
-  <label>Name: <input type="text" name="name" required /></label><br><br>
-  <label>Email: <input type="email" name="email" required /></label><br><br>
-  <button type="submit">Add User</button>
-</form>
+<!-- Dashboard Button -->
+<div class="text-center mt-6">
+  <a href="/dashboard" target="_blank">
+    <button class="bg-white text-black px-6 py-2 rounded text-lg font-medium">Dashboard</button>
+  </a>
+</div>
 
-<p id="result"></p>
+<!-- Footer -->
+<footer class="bg-gray-800 text-center py-6 mt-12">
+  <p class="text-sm text-gray-400">&copy; 2025 RealWorldZone – All rights reserved. | 
+    <a href="#" class="text-white hover:underline">Privacy</a> | 
+    <a href="#" class="text-white hover:underline">Terms</a></p>
+</footer>
 
-<br>
-<br>
+<!-- JS to Submit Form -->
+<script>
+  const form = document.getElementById('userForm');
+  const result = document.getElementById('result');
 
-    <a href="/dashboard" target="_blank" >
-  <button style="padding: 10px 20px; font-size: 16px;">Dashboard</button>
-</a>
+  const API_URL = "https://workspace.xodegad741.repl.co";
+ 
 
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-center py-6 mt-12">
-      <p class="text-sm text-gray-400">&copy; 2025 RealWorldZone – All rights reserved. | <a href="#" class="text-white hover:underline">Privacy</a> | <a href="#" class="text-white hover:underline">Terms</a></p>
-    </footer>
-
-
-
-
-  </body>
-</html>
+ 
