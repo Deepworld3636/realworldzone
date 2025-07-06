@@ -153,7 +153,42 @@
   const form = document.getElementById('userForm');
   const result = document.getElementById('result');
 
-  const API_URL = "https://workspace.xodegad741.repl.co";
- 
+  const API_URL = "https://workspace.xodegad741.repl.co"; // ✅ your actual backend URL
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const name = formData.get("name");
+    const email = formData.get("email");
+
+    try {
+      const response = await fetch(`${API_URL}/add-user`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ name, email })
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        result.textContent = `✅ ${data.message}`;
+        result.style.color = "lightgreen";
+        form.reset();
+      } else {
+        result.textContent = `❌ ${data.error || "Failed to add user."}`;
+        result.style.color = "red";
+      }
+
+    } catch (error) {
+      result.textContent = "❌ Network error. Could not connect to server.";
+      result.style.color = "red";
+      console.error(error);
+    }
+  });
+</script>
+
 
  
